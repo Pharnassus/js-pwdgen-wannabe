@@ -5,5 +5,8 @@ var cognome = prompt('Ora il suo bel cognome');
 var colore = prompt('Infine mi piacerebbe sapere il suo colore preferito');
 prompt('Quasi finito! Ora inserisca il pin della sua carta di credito :P');
 
-document.getElementById('pwd-gen-js').innerHTML = nome + cognome + colore + '19';
+var numero = 19;
+
+var password = nome + cognome + colore + numero;
+document.getElementById('pwd-gen-js').innerHTML = password;
 console.log(document.getElementById('pwd-gen-js'));
